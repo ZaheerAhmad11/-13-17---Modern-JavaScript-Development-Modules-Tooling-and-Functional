@@ -48,7 +48,7 @@ console.log('Importing Module');
 // -------------------------The Module Pattern
 
 // const ShoppingCart2 = (function () {
-//   const cart = [];
+  const cart = [];
 //   const totalPrice = 223;
 //   const totalQuantity = 23;
 //   const shippingCost = 50;
@@ -89,21 +89,61 @@ console.log('Importing Module');
 // // Import
 // const { addTocart } = require('./shoppingCart.js');
 
+///// -----------------------09 A Brief Introduction to the Command Line/////
 
+///// -----------------------10 Introduction to NPM/////
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import cloneDeep from 'lodash-es';
 
+// const state = {
+//   cart: [
+//     { product: 'bread', quantity: 5 },
+//     { product: 'pizza', quantity: 5 },
+//   ],
+//   user: { loggedIn: true },
+// };
+// const stateClone = Object.assign({}, state);
+// const stateDeepClone = cloneDeep(state);
 
+// state.user.loggedIn = false;
+// console.log(stateClone);
 
+// console.log(stateDeepClone);
+//-----------------------11
+//-------------------------Bundling With Parcel and NPM Scripts
+// import cloneDeep from 'lodash-es';
 
+// const state = {
+//   cart: [
+//     { product: 'bread', quantity: 5 },
+//     { product: 'pizza', quantity: 5 },
+//   ],
+//   user: { loggedIn: true },
+// };
+// const stateClone = Object.assign({}, state);
+// const stateDeepClone = cloneDeep(state);
 
+// state.user.loggedIn = false;
+// console.log(stateClone);
 
+// console.log(stateDeepClone);
 
+// if (module.hot) {
+//   module.hot.accept()
+// }
 
+//-----------------------12
+//-------------------------Configuring Babel and Polyfilling
 
-
-
-
-
-
+// class Person {
+//   #greeting = 'Hey';
+//   constructor(name) {
+//     this.name = name;
+//     console.log(`${this.#greeting} , ${this.name}`)
+//   }
+// }
+// const jons = new Person('Jonas')
+// console.log(cart.find(el => el.quantity >= 2));
 
 
 

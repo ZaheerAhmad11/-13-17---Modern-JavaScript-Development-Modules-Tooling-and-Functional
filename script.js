@@ -146,5 +146,10 @@ console.log('Importing Module');
 // console.log(cart.find(el => el.quantity >= 2));
 
 
+///-----------------------013 Review Writing Clean and Modern JavaScript///
 
+///-----------------------014 Let's Fix Some Bad Code Part 1///
 
+//----------------Go to Clean.js file 
+
+///-----------------------015 Let's Fix Some Bad Code Part 2///
